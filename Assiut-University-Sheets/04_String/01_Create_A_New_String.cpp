@@ -2,9 +2,8 @@
 #include <string>
 using namespace std;
 
-
 /*
-? what is reqired 
+? what is reqired
 ? here are two string print length of each and concatinate them
 ?
 ?the solution
@@ -18,12 +17,11 @@ using namespace std;
 int main()
 {
     string s, m;
-    getline(cin,s);
-    getline(cin,m);
+    cin >> s >> m;
+
     size_t length_s = s.length();
     size_t length_m = m.length();
 
-    cout<<length_s<<" "<<length_m<<endl;
-    cout<<s<<" "<<m;
-    
+    cout << length_s << " " << length_m << endl;
+    cout << s << " " << m;
 }
