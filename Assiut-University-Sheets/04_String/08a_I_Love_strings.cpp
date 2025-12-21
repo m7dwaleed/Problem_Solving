@@ -3,6 +3,11 @@
 #include <string>
 using namespace std;
 
+
+
+//* (Lock-step Iteration)
+
+
 int main()
 {
 ios::sync_with_stdio(0);
