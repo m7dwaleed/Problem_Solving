@@ -1,21 +1,21 @@
 #include<iostream>
 using namespace std;
 
-
-void rec(int n,int i){
+void fun (int n){
     if(n==1){
         cout<<n;
         return;
-    } 
-    
+    }
     cout<<n<<" ";
-    rec(n-1,i);
+    fun(n-1);
+
 }
+
 int main(){
 
 int n;
 cin>>n;
 
-rec(n,1);
+fun(n);
     return 0;
 }

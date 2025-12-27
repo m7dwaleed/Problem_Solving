@@ -1,17 +1,18 @@
 #include<iostream>
 using namespace std;
 
-void rec(int i,int n)
-{
-    if(i>n) return;
-    
-    cout<<i<<endl;
-    rec(i+1,n);
+
+
+void fun(int n){
+    if(n==0) return;
+
+    fun(n-1);
+    cout<<n<<endl;
 }
+
 int main(){
 int n;
 cin>>n;
-rec(1,n);
-
+fun(n);
     return 0;
 }

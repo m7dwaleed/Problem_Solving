@@ -1,16 +1,19 @@
 #include <iostream>
 using namespace std;
 
-void recPrint(int n,int i){
-   if (i==n) return;
+void fun(int n){
+    if(n==0) return;
+
     cout<<"I love Recursion\n";
-    recPrint(n,i+1);
+
+    fun(n-1);
+
 }
 
 int main(){
 
-int n;
-cin>>n;
-recPrint(n,0);
+    int n;
+    cin>>n;
+    fun(n);
     return 0;
 }
